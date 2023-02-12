@@ -1,0 +1,85 @@
+.authentication-form {
+  width: 400px;
+}
+.font-bold {
+  font-weight: bold;
+}
+.underline {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+a:hover {
+  cursor: pointer;
+  color: var(--colour-primary);
+  text-decoration: underline;
+}
+
+.loader-parent {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.722);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000;
+}
+
+.loader {
+  height: 30px;
+  width: 30px;
+  border: 5px solid #f3f3f3;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: loader-anim 1s linear infinite;
+}
+
+.rounded {
+  border-radius: 4px;
+}
+
+.shadow {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid #cdcdcd;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+i{
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
+table{
+  border : 1px solid #cdcdcd;
+}
+
+
+.disabled-btn{
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.error-message {
+  background-color: rgb(188, 94, 94);
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+@keyframes loader-anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
